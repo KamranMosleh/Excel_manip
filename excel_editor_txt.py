@@ -1,8 +1,7 @@
 import pandas as pd
 from openpyxl import load_workbook
 
-# === STEP 1: Load Excel data using pandas ===
-
+# === STEP 1: Load the existing Excel file into a DataFrame using pandas ===
 # Define the path to your existing Excel file
 input_file = "value_messages_excel.xlsx"
 
@@ -28,7 +27,6 @@ if "Output" not in wb.sheetnames:
 ws_output = wb["Output"]
 
 # === STEP 3: Write messages into the Output sheet ===
-
 # Start writing messages from the first row
 row_index = 1
 
@@ -52,9 +50,31 @@ for row_name in df.index:
         # Move to the next row in the sheet
         row_index += 1
 
-# === STEP 4: Save changes back to the same file ===
+print(f"\n Messages written to existing sheet and saved in: '{input_file}'")
 
+# === STEP 4: Save changes ===
 # Save the modified workbook, overwriting the original file
 wb.save(input_file)
 
-print(f"\n✅ Messages written to existing sheet and saved in: '{input_file}'")
+# === STEP 5: Read existing messages from a text file and append new messages ===
+# Read the existing content from the output file
+# This assumes the file is a text file with messages, not an Excel file
+with open("output_messages.ids", "r") as file:
+    lines = file.readlines()
+
+print("\nWriting messages to existing text/ids file...")
+# Prepare new messages
+new_lines = []
+for row_name in df.index:
+    for col_name in df.columns:
+        value = df.loc[row_name, col_name] # Get the value at the intersection of current row and column
+        message = f"The value from row: {row_name}, and column: {col_name}, is: {value}"
+        new_lines.append(message + "\n")
+
+# Combine preserved lines with new messages
+updated_lines = lines[:10] + new_lines
+
+# Write everything back to the file
+with open("output_messages.ids", "w") as file:
+    file.writelines(updated_lines)
+    print(f"\n Messages written to existing output_messages.ids: '{file}'")
