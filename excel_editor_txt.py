@@ -78,14 +78,13 @@ middle = []
 for row_name in df.index:
     for col_name in df.columns:
         value = df.loc[row_name, col_name]
-        message = f"The value from row: {row_name}, and column: {col_name}, is: {value}"
+        message = f"          The value from row: {row_name}, and column: {col_name}, is: {value}"
         middle.append(message + "\n")
 
 # Combine all parts
-updated_lines = top + middle + bottom   ### check the top and bottom parts to see if they should be preserved???
-
+updated_lines = top + middle + bottom   ### check the top and bottom parts to see if they should be preserved or they need some changes???
 
 # Write everything back to the file
 with open("output_messages.ids", "w") as file:
     file.writelines(updated_lines)
-    print(f"\n Messages written to existing output file called: '{file.name}'")
+    print(f"\n Success: Messages written to existing output file called: '{file.name}'\n")

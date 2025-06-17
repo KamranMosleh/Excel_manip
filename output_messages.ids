@@ -8,36 +8,36 @@ These first 10 lines are to be ignored:
 .
 .
 .
-The value from row: Row1, and column: A, is: 10
-The value from row: Row1, and column: B, is: 20
-The value from row: Row1, and column: C, is: 30
-The value from row: Row1, and column: D, is: 40
-The value from row: Row1, and column: E, is: 50
-The value from row: Row1, and column: F, is: 60
-The value from row: Row2, and column: A, is: 15
-The value from row: Row2, and column: B, is: 25
-The value from row: Row2, and column: C, is: 35
-The value from row: Row2, and column: D, is: 45
-The value from row: Row2, and column: E, is: 55
-The value from row: Row2, and column: F, is: 65
-The value from row: Row3, and column: A, is: 5
-The value from row: Row3, and column: B, is: 10
-The value from row: Row3, and column: C, is: 15
-The value from row: Row3, and column: D, is: 20
-The value from row: Row3, and column: E, is: 25
-The value from row: Row3, and column: F, is: 30
-The value from row: Row4, and column: A, is: 30
-The value from row: Row4, and column: B, is: 35
-The value from row: Row4, and column: C, is: 40
-The value from row: Row4, and column: D, is: 45
-The value from row: Row4, and column: E, is: 50
-The value from row: Row4, and column: F, is: 55
-The value from row: Row5, and column: A, is: 12
-The value from row: Row5, and column: B, is: 14
-The value from row: Row5, and column: C, is: 16
-The value from row: Row5, and column: D, is: 18
-The value from row: Row5, and column: E, is: 20
-The value from row: Row5, and column: F, is: 22
+          The value from row: Row1, and column: A, is: 10
+          The value from row: Row1, and column: B, is: 20
+          The value from row: Row1, and column: C, is: 30
+          The value from row: Row1, and column: D, is: 40
+          The value from row: Row1, and column: E, is: 50
+          The value from row: Row1, and column: F, is: 60
+          The value from row: Row2, and column: A, is: 15
+          The value from row: Row2, and column: B, is: 25
+          The value from row: Row2, and column: C, is: 35
+          The value from row: Row2, and column: D, is: 45
+          The value from row: Row2, and column: E, is: 55
+          The value from row: Row2, and column: F, is: 65
+          The value from row: Row3, and column: A, is: 5
+          The value from row: Row3, and column: B, is: 10
+          The value from row: Row3, and column: C, is: 15
+          The value from row: Row3, and column: D, is: 20
+          The value from row: Row3, and column: E, is: 25
+          The value from row: Row3, and column: F, is: 30
+          The value from row: Row4, and column: A, is: 30
+          The value from row: Row4, and column: B, is: 35
+          The value from row: Row4, and column: C, is: 40
+          The value from row: Row4, and column: D, is: 45
+          The value from row: Row4, and column: E, is: 50
+          The value from row: Row4, and column: F, is: 55
+          The value from row: Row5, and column: A, is: 12
+          The value from row: Row5, and column: B, is: 14
+          The value from row: Row5, and column: C, is: 16
+          The value from row: Row5, and column: D, is: 18
+          The value from row: Row5, and column: E, is: 20
+          The value from row: Row5, and column: F, is: 22
 .
 These last lines are to be ignored as well:
 .
